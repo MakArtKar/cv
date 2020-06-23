@@ -1,0 +1,107 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.9)  23 JUN 2020 18:30
+entering extended mode
+**./cv.tex
+(cv.tex
+LaTeX2e <2019-10-01>
+(res.cls
+Document Style `res' <26 Sep 89>.
+Document Class: res 2000/05/19 v1.4b Resume class
+(/home/makartkar/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/home/makartkar/.miktex/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+No auxiliary output files.
+
+\tabular@text=\toks14
+\tabular@head=\toks15
+\tabular@tail=\toks16
+\@ta=\toks17
+\undefined@token=\toks18
+\sectionwidth=\dimen103
+\sectionskip=\skip43
+\resumewidth=\dimen104
+\@columnwidth=\dimen105
+\c@numberofcolumns=\count88
+) (/home/makartkar/.miktex/texmfs/install/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+
+(/home/makartkar/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)) (cv.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 22.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+8.
+ (/home/makartkar/.miktex/texmfs/install/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--57
+
+ []
+
+[1
+
+{/home/makartkar/.miktex/texmfs/data/pdftex/config/pdftex.map}] ) 
+Here is how much of TeX's memory you used:
+ 366 strings out of 492449
+ 4308 string characters out of 3124702
+ 68015 words of memory out of 3000000
+ 4795 multiletter control sequences out of 15000+200000
+ 4906 words of font info for 18 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 32i,8n,24p,156b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/makartk
+ar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/maka
+rtkar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/m
+akartkar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home
+/makartkar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></ho
+me/makartkar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb><
+/home/makartkar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b>
+Output written on cv.pdf (1 page, 81691 bytes).
+PDF statistics:
+ 30 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
