@@ -1,13 +1,19 @@
-CVS   := cv_ml cv_edu
+# Every cvs/<name>.tex is built into pdf/<name>.pdf; aux files go to build/.
+CVS  := $(patsubst cvs/%.tex,pdf/%.pdf,$(wildcard cvs/*.tex))
+DEPS := $(wildcard common/* sections/*.tex images/*)
 BUILD := build
-SRCS  := TLCresume.sty _header.tex contacts.tex $(wildcard sections/*.tex images/*)
+
+# latexmk runs from the repo root, so sections/ and images/ resolve as is;
+# common/ is added to the TeX search path for the style, header and contacts.
+export TEXINPUTS := common:
 
 .PHONY: all clean
-all: $(CVS:=.pdf)
+all: $(CVS)
 
-%.pdf: %.tex $(SRCS)
+pdf/%.pdf: cvs/%.tex $(DEPS)
 	latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=$(BUILD) $<
-	cp $(BUILD)/$@ $@
+	@mkdir -p pdf
+	cp $(BUILD)/$*.pdf $@
 
 clean:
 	rm -rf $(BUILD)

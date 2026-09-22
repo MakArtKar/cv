@@ -1,19 +1,27 @@
 # My CV
 
-LaTeX sources for two CV variants built from shared modules:
+LaTeX sources for CVs built from shared modules. One entrypoint per CV variant or application.
 
-- `cv_ml.tex` — ML / industry CV
-- `cv_edu.tex` — education-focused CV (same modules, education with course lists)
-
-Layout:
-
-- `contacts.tex`, `_header.tex`, `TLCresume.sty` — shared contacts, header and style
-- `sections/` — content modules, `\input` from the top-level `cv_*.tex` files
+- `cvs/` — entrypoints; each `cvs/<name>.tex` only lists the sections it `\input`s
+- `pdf/` — built PDFs (`pdf/<name>.pdf`), committed
+- `sections/` — content modules; add a variant (e.g. `experience_research.tex`) only when the text really differs
+- `common/` — style, header and contacts
 - `images/` — logos
 
-Build (needs TeX Live with `latexmk`):
+Base variants: `cvs/ml.tex` (ML / industry) and `cvs/edu.tex` (education with course lists).
+
+## New application
+
+1. Copy a base entrypoint: `cp cvs/ml.tex cvs/YYYY-MM_company_role.tex`
+2. Change the section list.
+3. Run `make`.
+
+## Build
+
+Needs TeX Live with `latexmk`.
 
 ```sh
-make        # build cv_ml.pdf and cv_edu.pdf; aux files go to build/
-make clean  # remove build/
+make                              # build all pdf/*.pdf
+make pdf/YYYY-MM_company_role.pdf # build one CV
+make clean                        # remove build/ (aux files)
 ```
