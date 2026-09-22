@@ -1,0 +1,43 @@
+% Apple MLR Paris: Internship - Machine Learning Research
+% https://jobs.apple.com/en-us/details/200683768/internship-machine-learning-research
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{TLCresume}
+
+\input{contacts}
+\input{_header}
+\publicationstrue
+\begin{document}
+
+\section{Research Summary}
+\begin{tabular}{p{6.5em} p{0em} p{47.5em}}
+\skills{Topics} & & \begin{tabular}[t]{@{}p{10.3em}@{}l@{}}
+    \uline{Efficient LLM inference} & Discrete Diffusion, Flow Maps, Consistency, Inference-Time Scaling, Speculative Decoding
+\end{tabular} \\
+\skills{Publications} & & ICML 2026 main track \\
+\skills{Skills} & & \begin{tabular}[t]{@{}p{10.3em}@{}l@{}}
+    \textit{Libraries} & PyTorch, JAX, Hugging Face Transformers (Qwen, LLaMA) \\
+    \textit{Training / inference} & multi-node SLURM (DDP, FSDP), DeepSpeed, FlashAttention, bf16, vLLM / SGLang, ONNX \\
+    \textit{On-device inference} & KV compression, pruning, quantization
+\end{tabular} \\
+\skills{Background} & & 5+ years in ML (engineer $\rightarrow$ researcher), 1st year PhD student
+\end{tabular}% no trailing space: the table is wider than the line
+
+\section{Publications}
+\input{sections/publications}
+
+\section{Research Experience}
+\input{sections/experience_research}
+
+\input{sections/experience_research_internships}
+
+\section{Industry Experience}
+\input{sections/experience_industry_short}
+
+\section{Education}
+\input{sections/education}
+
+\section{Competitions}
+\input{sections/competitions}
+\end{document}

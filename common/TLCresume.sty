@@ -36,8 +36,11 @@
 \titlespacing*{\subsection}{0em}{0em}{0em}
 \titleformat{\subsection}{\bfseries}{}{0em}{}[]
 
+% UNDERLINE at a fixed depth (\uline), independent of descenders
+\RequirePackage[normalem]{ulem}
+
 % BOLD COMMAND
-\newcommand{\skills}[1]{ {\bfseries #1}}
+\newcommand{\skills}[1]{{\bfseries #1}}
 
 
 
@@ -49,6 +52,14 @@
 \newenvironment{zitemize}{
 \begin{itemize} \itemsep 0pt \parskip 0pt \parsep 1pt}
 {\end{itemize}\vspace{-.5em}}
+
+% LOGO: image (height up to [size], width up to \logowidth) centered in a box
+% of width \logowidth, so the text after every logo starts at the same position
+\newlength{\logowidth}\setlength{\logowidth}{2.4ex}
+\newcommand{\logo}[2][2ex]{\makebox[\logowidth][c]{$\vcenter{\hbox{\includegraphics[width=\logowidth,height=#1,keepaspectratio]{#2}}}$}\hspace{0.2em}}
+
+% Set \publicationstrue in CVs with a Publications section
+\newif\ifpublications
 
 % NO PAGE NUMBER
 \pagenumbering{gobble}
