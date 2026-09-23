@@ -1,37 +1,10 @@
-% Two columns: degrees on the left, relevant courses (all degrees) on the right
-\newcommand{\degree}[5]{% logo, degree, dates, university, extra
-  \logo{#1}\skills{#2} \hfill #3 \\
-  \hspace*{\dimexpr\logowidth+0.2em}\textit{#4}#5\par}
+% Degrees, newest first; teaching is listed under the PhD
 \newcommand{\dates}[2]{\makebox[3.9em][r]{#1} --- \makebox[3.9em][l]{#2}}% dashes line up
-\newcommand{\course}[1]{{\small\textbullet~#1\par}}
-\noindent\begin{minipage}[t]{0.6\textwidth}
-\logo{images/jb.png}\skills{PhD in Computer Science (1st year)} \hfill \dates{Sep 2026}{Present} \\
-\hspace*{\dimexpr\logowidth+0.2em}\skills{Master in Computer Science} \hfill \dates{Sep 2024}{May 2026} \\
-\hspace*{\dimexpr\logowidth+0.2em}\textit{\href{https://constructor.university/}{Constructor University}, Bremen, Germany}\par
-\degree{images/jb.png}{Bachelor in Computer Science}{\dates{Jan 2023}{Jun 2024}}{\href{https://www.nup.ac.cy/bsc-in-applied-computer-science/}{Neapolis University of Paphos}, Cyprus}{, GPA 86/100}
-\degree{images/hse.jpeg}{Bachelor in Computer Science}{\dates{Sep 2019}{Jun 2024}}{\href{https://www.hse.ru/en/ba/ami/}{HSE University}, Moscow, Russia}{, GPA 8.7/10}
-\degree{images/ysda.png}{Master's Equivalent in Data Science}{\dates{Sep 2020}{May 2022}}{Yandex School of Data Analysis, Russia}{}
-\end{minipage}\hfill{\color{highlight}\vrule width \rulewidth}\hfill
-\begin{minipage}[t]{0.36\textwidth}
-\textbf{Selected courses}\par
-\begin{minipage}[t]{0.5\linewidth}
-\course{Machine Learning}
-\course{Deep Learning}
-\course{Generative Models}
-\course{Bayesian Methods}
-\course{Optimization Methods}
-\course{Large-Scale DL}
-\course{NLP}
-\course{Computer Vision}
-\end{minipage}%
-\begin{minipage}[t]{0.5\linewidth}
-\course{Deep Vision}
-\course{3D Computer Vision}
-\course{Reinforcement Learning}
-\course{Probability Theory}
-\course{Statistics}
-\course{Linear Algebra}
-\course{Matrix Computations}
-\course{Algorithms and DS}
-\end{minipage}
-\end{minipage}
+\logo{images/jb.png}\skills{PhD in Computer Science (1st year)}, \textit{\href{https://constructor.university/}{Constructor University}, Bremen, Germany} \hfill \dates{Sep 2026}{Present}\par\vspace{-.8em}
+\begin{zitemize}
+\item Teaching Assistant (seminars): Deep Bayesian Models (Spring 2026), Bayesian Methods (Fall 2026)
+\end{zitemize}\vspace{-.7em}
+\logo{images/jb.png}\skills{Master in Computer Science}, \textit{\href{https://constructor.university/}{Constructor University}, Bremen, Germany} \hfill \dates{Sep 2024}{May 2026}\par
+\logo{images/jb.png}\skills{Bachelor in Computer Science}, \textit{\href{https://www.nup.ac.cy/bsc-in-applied-computer-science/}{Neapolis University of Paphos}, Cyprus}, GPA 86/100 \hfill \dates{Jan 2023}{Jun 2024}\par
+\logo{images/hse.jpeg}\skills{Bachelor in Computer Science}, \textit{\href{https://www.hse.ru/en/ba/ami/}{HSE University}, Moscow, Russia}, GPA 8.7/10 \hfill \dates{Sep 2019}{Jun 2024}\par
+\logo{images/ysda.png}\skills{Master's Equivalent in Data Science}, \textit{Yandex School of Data Analysis, Russia} \hfill \dates{Sep 2020}{May 2022}\par
