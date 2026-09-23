@@ -28,10 +28,13 @@
 \RequirePackage[inline]{enumitem}
 \setlength{\tabcolsep}{0in}
 
+% RULES: thickness of section rules and the vertical rule in Education
+\newlength{\rulewidth}\setlength{\rulewidth}{0.6pt}
+
 % SECTION FORMATTING 
 \RequirePackage[nostruts]{titlesec}
 \titlespacing*{\section}{0em}{0.5em}{0em}
-\titleformat{\section}{\color{highlight} \scshape \raggedright \large}{}{0em}{}[\vspace{-0.75em}\hrulefill]
+\titleformat{\section}{\color{highlight} \scshape \raggedright \large}{}{0em}{}[\vspace{-0.75em}\leavevmode\leaders\hrule height \rulewidth\hfill\kern0pt]
 % SUBSECTION FORMATTING
 \titlespacing*{\subsection}{0em}{0em}{0em}
 \titleformat{\subsection}{\bfseries}{}{0em}{}[]
